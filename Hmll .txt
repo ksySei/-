@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше Имя - Веб-дизайнер</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Базовые стили для начального вида, можно перенести в style.css */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        #hero {
+            background: #e2e2e2;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        #portfolio .portfolio-item {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ваше Имя</h1>
+        <p>Веб-дизайнер</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Создаю красивые и функциональные сайты</h2>
+            <p>Помогаю бизнесам и людям заявить о себе онлайн.</p>
+            <a href="#portfolio" style="display: inline-block; background: #333; color: #fff; padding: 10px 20px; text-decoration: none; margin-top: 20px;">Посмотреть Портфолио</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут [Ваше Имя]. Я начинающий веб-дизайнер, специализирующийся на [укажите вашу специализацию, например: создании лендингов, дизайне интернет-магазинов, UX/UI]. Моя цель — создавать не только визуально привлекательные, но и удобные для пользователя веб-ресурсы.</p>
+            <p>В работе использую [укажите инструменты, например: Figma, HTML, CSS]. Готов воплотить ваши идеи в жизнь!</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="portfolio-item">
+                <h3>Проект 1: [Название проекта]</h3>
+                <p>[Краткое описание проекта]</p>
+                <!-- Сюда можно добавить изображение проекта -->
+                <!-- <img src="путь_к_вашему_изображению.jpg" alt="Описание проекта" style="max-width: 100%;"> -->
+                <!-- Ссылка на проект, если он онлайн -->
+                <!-- <p><a href="#" target="_blank">Посмотреть онлайн</a></p> -->
+            </div>
+            <div class="portfolio-item">
+                <h3>Проект 2: [Название проекта]</h3>
+                <p>[Краткое описание проекта]</p>
+                <!-- Добавьте еще проекты -->
+            </div>
+            <!-- Добавьте больше portfolio-item для каждого вашего проекта -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Готовы обсудить ваш проект? Свяжитесь со мной!</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <!-- Можно добавить ссылки на соцсети или мессенджеры -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* style.css */
+
+/* Сброс базовых стилей */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Можно выбрать другой шрифт */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%; /* Чуть шире на больших экранах */
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: #ccc 1px solid;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+header p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Увеличил расстояние между пунктами */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+nav a:hover {
+    color: #007bff; /* Цвет при наведении */
+}
+
+section {
+    padding: 60px 0; /* Увеличил вертикальные отступы секций */
+    text-align: center; /* Выравнивание текста по центру в секциях */
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 30px; /* Отступ после заголовка секции */
+    font-size: 2em;
+}
+
+#hero {
+    background: linear-gradient(to right, #e2e2e2, #f4f4f4); /* Градиентный фон */
+    color: #333;
+}
+
+#hero h2 {
+    color: #333; /* Убедимся, что заголовок видно на фоне */
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero a.button { /* Стиль для кнопки "Посмотреть Портфолио" */
+    display: inline-block;
+    background: #007bff; /* Яркий цвет кнопки */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px; /* Скругленные углы */
+    transition: background 0.3s ease;
+}
+
+#hero a.button:hover {
+    background: #0056b3; /* Цвет кнопки при наведении */
+}
+
+#about {
+    background: #f9f9f9; /* Светлый фон для контраста */
+}
+
+#about p {
+    text-align: left; /* Выравнивание текста по левому краю в "Обо мне" */
+    margin-bottom: 15px;
+}
+
+
+#portfolio .portfolio-item {
+    background: #fff;
+    border: 1px solid #eee; /* Более светлая рамка */
+    margin-bottom: 30px; /* Увеличил отступ между проектами */
+    padding: 20px;
+    text-align: left; /* Выравнивание текста проекта по левому краю */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Легкая тень */
+}
+
+#portfolio .portfolio-item h3 {
+    margin-bottom: 10px;
+    color: #007bff; /* Цвет заголовка проекта */
+}
+
+#portfolio .portfolio-item img {
+    display: block; /* Изображение как блочный элемент */
+    margin: 0 auto 15px auto; /* Центрирование изображения и отступ снизу */
+    max-width: 100%;
+    height: auto; /* Сохраняем пропорции */
+}
+
+#portfolio .portfolio-item a {
+     color: #007bff;
+     text-decoration: none;
+}
+#portfolio .portfolio-item a:hover {
+     text-decoration: underline;
+}
+
+
+#contact {
+    background: #e2e2e2; /* Фон для контактов */
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0; /* Увеличил отступ футера */
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Адаптивность (очень базовая) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block; /* Пункты меню в столбик на маленьких экранах */
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 0; /* Уменьшил отступы на маленьких экранах */
+    }
+}
